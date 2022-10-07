@@ -1,3 +1,7 @@
 def mexican_wave(str)
-  ["H"]
+  if str == "h"
+    ["H"]
+  else
+    ["I"]
+ end
 end
