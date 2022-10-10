@@ -32,4 +32,8 @@ RSpec.describe "mexican wave method" do
   it "returns an empty array for empty string input" do
     expect(mexican_wave("")).to eq []
   end
+
+  it "passes over whitespace" do
+    expect(mexican_wave("it is")).to eq ["It is", "iT is", "it Is", "it iS"]
+  end
 end
