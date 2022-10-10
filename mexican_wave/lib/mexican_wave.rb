@@ -1,7 +1,5 @@
 def mexican_wave(str)
-  l = str.length
-  dups = (str + " ") * l
-  arr = dups.split(" ")
+  arr = ((str + " ") * str.length).split(" ")
   wave_arr = arr.each_with_index.map do |word, index|
     word.chars.each_with_index.map do |char, i|
       if i == index

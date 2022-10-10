@@ -24,4 +24,8 @@ RSpec.describe "mexican wave method" do
   it "returns array for three letter input two" do
     expect(mexican_wave("two")).to eq ["Two", "tWo", "twO"]
   end
+
+  it "returns array for three letter input hello" do
+    expect(mexican_wave("hello")).to eq ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
+  end
 end
