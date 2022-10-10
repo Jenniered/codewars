@@ -1,17 +1,17 @@
 def mexican_wave(str)
-  arr = str.split("")
-  if str.length === 1
-    first = "#{arr[0].upcase}"
-    [first]
-    # str.upcase.split("") 
-  elsif str.length === 2
-    first = "#{arr[0].upcase}#{arr[1]}"
-    second = "#{arr[0]}#{arr[1].upcase}"
-    [first, second]  
- else
-    first = "#{arr[0].upcase}#{arr[1]}#{arr[2]}"
-    second = "#{arr[0]}#{arr[1].upcase}#{arr[2]}"
-    third = "#{arr[0]}#{arr[1]}#{arr[2].upcase}"
-    [first, second, third]  
- end
+  l = str.length
+  dups = (str + " ") * l
+  arr = dups.split(" ")
+  wave_arr = arr.each_with_index.map do |word, index|
+    word.chars.each_with_index.map do |char, i|
+      if i == index
+        char.upcase
+      else
+        char 
+      end
+    end
+  end
+  wave_arr.map do |arr|
+    arr.join("")
+  end
 end
