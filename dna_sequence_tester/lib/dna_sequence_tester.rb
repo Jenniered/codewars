@@ -6,5 +6,10 @@ def dna_sequence_tester(seq1, seq2)
   new_seq2 = seq2_arr.map do |letter| 
     hash[letter]
   end.join("")
-  new_seq2.include? seq1
+
+  if seq2.length > seq1.length
+    new_seq2.include? seq1
+  else
+    seq1.include? new_seq2
+  end
 end
