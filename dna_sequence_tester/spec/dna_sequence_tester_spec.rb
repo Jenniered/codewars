@@ -36,4 +36,8 @@ RSpec.describe "dna sequence tester method" do
   it "returns false for sequences 'TA' and 'AA'" do
     expect(dna_sequence_tester('TA', 'AA')).to eq false
   end
+
+  it "returns true for sequences 'GC' and 'GC'" do
+    expect(dna_sequence_tester('GC', 'GC')).to eq true
+  end
 end
