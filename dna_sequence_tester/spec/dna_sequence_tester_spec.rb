@@ -40,4 +40,13 @@ RSpec.describe "dna sequence tester method" do
   it "returns true for sequences 'GC' and 'GC'" do
     expect(dna_sequence_tester('GC', 'GC')).to eq true
   end
+
+  it "returns true for sequences 'GTCA' and 'TGAC'" do
+    expect(dna_sequence_tester('GTCA', 'TGAC')).to eq true
+  end
+
+  it "returns true for sequences of different length, but shorter one is entirely bonded'" do
+    expect(dna_sequence_tester('GCGCTGCTAGCTGATCGA', 'ACGTACGATCGATCAGCTAGCAGCGCTAC')).to eq true
+  end
+
 end
