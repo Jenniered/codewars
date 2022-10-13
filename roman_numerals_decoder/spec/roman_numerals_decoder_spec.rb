@@ -29,4 +29,8 @@ RSpec.describe "roman numerals decoder method" do
     expect(roman_numerals_decoder("MMVIII")).to eq 2008
   end
 
+  it "returns 1666 for 'MDCLXVI'" do
+    expect(roman_numerals_decoder("MDCLXVI")).to eq 1666
+  end
+
 end
