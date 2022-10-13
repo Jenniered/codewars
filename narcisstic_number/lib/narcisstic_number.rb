@@ -1,3 +1,7 @@
 def narcisstic_number?(num)
-  true
+  if num.digits.length < 2
+    true
+  else
+    false
+  end
 end
