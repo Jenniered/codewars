@@ -20,7 +20,7 @@ INPUT  digits   raised   sum   OUTPUT
 3         1       3      3      true
 10        2     1 + 0     1     false
 12        2     1 + 4     5     false
-153
+153       3     1 + 125 + 27 153  true
 370
 371
 407
