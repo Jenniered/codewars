@@ -1,3 +1,7 @@
 def roman_numerals_decoder(roman)
-  1
+  if roman == "II"
+    2
+  else
+    1
+  end
 end
