@@ -10,13 +10,21 @@ def roman_numerals_decoder(roman)
   }
   array = roman.chars
   values_arr = array.each_with_index.map do |char, index|
-    # if char is I and next char is V, return -1, else values[char]
-    next_char = array[index + 1]
-    if char == "I" && next_char == "V"
-      -1
-    else
+    # next_char = array[index + 1]
+    # if values[char] < values[next_char] 
+    #   -1 * values[char]
+    # else
       values[char]
     end
+  # end
+  # [-100, 500, -10, 50, -1, 5]
+  adj_arr = values_arr.each_cons(2).map do |a, b|
+    if a < b
+      -1 * a
+    else
+      a      
+    end
   end
-  values_arr.sum
+  p adj_arr
+  adj_arr.push(values_arr[-1]).sum
 end

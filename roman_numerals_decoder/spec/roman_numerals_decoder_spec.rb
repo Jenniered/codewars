@@ -36,4 +36,12 @@ RSpec.describe "roman numerals decoder method" do
   it "returns 4 for 'IV'" do
     expect(roman_numerals_decoder("IV")).to eq 4
   end
+
+  it "returns 124 for 'CXXIV'" do
+    expect(roman_numerals_decoder("CXXIV")).to eq 124
+  end
+
+  it "returns 444 for 'CDXLIV'" do
+    expect(roman_numerals_decoder("CDXLIV")).to eq 444
+  end
 end
