@@ -8,8 +8,15 @@ def roman_numerals_decoder(roman)
     "D" => 500,
     "M" => 1000
   }
-  values_arr = roman.chars.map do |char|
-    values[char]
+  array = roman.chars
+  values_arr = array.each_with_index.map do |char, index|
+    # if char is I and next char is V, return -1, else values[char]
+    next_char = array[index + 1]
+    if char == "I" && next_char == "V"
+      -1
+    else
+      values[char]
+    end
   end
   values_arr.sum
 end
