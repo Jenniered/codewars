@@ -52,7 +52,4 @@ RSpec.describe "dna sequence tester method" do
   it "returns true for sequences of different length, when shorter one is seq2'" do
     expect(dna_sequence_tester('ACGTACGATCGATCAGCTAGCAGCGCTAC', 'GCGCTGCTAGCTGATCGA')).to eq true
   end
-
-
-
 end
