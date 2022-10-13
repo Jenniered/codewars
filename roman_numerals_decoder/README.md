@@ -15,3 +15,9 @@ L          50
 C          100
 D          500
 M          1,000
+
+VI -> to array
+["V", "I"]
+look up value in the hash
+[5, 1]
+sum

@@ -16,4 +16,8 @@ RSpec.describe "roman numerals decoder method" do
   it "returns 5 for 'V'" do
     expect(roman_numerals_decoder("V")).to eq 5
   end
+
+  it "returns 6 for 'VI'" do
+    expect(roman_numerals_decoder("VI")).to eq 6
+  end
 end
