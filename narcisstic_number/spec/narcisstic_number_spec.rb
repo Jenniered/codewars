@@ -8,4 +8,8 @@ RSpec.describe "narcisstic number method" do
   it "returns false for a double digit number" do
     expect(narcisstic_number?(10)).to eq false
   end
+
+  it "returns false for a number under 153" do
+    expect(narcisstic_number?(120)).to eq false
+  end
 end
