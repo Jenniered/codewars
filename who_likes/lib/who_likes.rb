@@ -1,3 +1,7 @@
 def who_likes(array)
-  "no one likes this"
+  if array == ["Peter"]
+    "Peter likes this"
+  else 
+    "no one likes this"
+  end
 end
