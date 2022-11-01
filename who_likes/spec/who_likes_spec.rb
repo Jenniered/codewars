@@ -12,4 +12,8 @@ RSpec.describe "who likes method" do
   it "returns the name for an array with single name - John" do
     expect(who_likes(["John"])).to eq "John likes this"
   end
+
+  it "returns phrase with and for two name array" do
+    expect(who_likes(["John" , "Peter"])).to eq "John and Peter like this"
+  end
 end
