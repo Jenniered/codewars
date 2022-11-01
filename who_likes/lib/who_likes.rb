@@ -1,13 +1,13 @@
-def who_likes(array)
-  if array == []
+def who_likes(names)
+  if names == []
     "no one likes this"
-  elsif array.length == 1
-     "#{array[0]} likes this"
-  elsif array.length == 2
-    "#{array[0]} and #{array[1]} like this"
-  elsif array.length == 3
-    "#{array[0]}, #{array[1]} and #{array[2]} like this"
+  elsif names.length == 1
+     "#{names[0]} likes this"
+  elsif names.length == 2
+    "#{names[0]} and #{names[1]} like this"
+  elsif names.length == 3
+    "#{names[0]}, #{names[1]} and #{names[2]} like this"
   else
-    "#{array[0]}, #{array[1]} and #{array.length - 2} others like this"
+    "#{names[0]}, #{names[1]} and #{names.length - 2} others like this"
   end
 end
