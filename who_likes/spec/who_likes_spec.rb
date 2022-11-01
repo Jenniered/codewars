@@ -16,4 +16,8 @@ RSpec.describe "who likes method" do
   it "returns phrase with and for two name array" do
     expect(who_likes(["John" , "Peter"])).to eq "John and Peter like this"
   end
+
+  it "returns correct phrase for three name array" do
+    expect(who_likes(["John" , "Peter", "Isa"])).to eq "John, Peter and Isa like this"
+  end
 end
