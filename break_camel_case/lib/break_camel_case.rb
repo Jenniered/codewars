@@ -1,6 +1,7 @@
 def break_camel_case(string)
   if !string.count("A-Z").zero?
-    "camel Case" 
+    arr = string.split /(?=[A-Z])/
+    arr.join(" ")
  else
   string
  end
