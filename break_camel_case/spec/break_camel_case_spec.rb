@@ -16,4 +16,8 @@ RSpec.describe "break camel case method" do
   it 'returns two words for "packedLunch"' do
     expect(break_camel_case("packedLunch")).to eq "packed Lunch"
   end
+
+  it 'returns three words for "packedLunchNow"' do
+    expect(break_camel_case("packedLunchNow")).to eq "packed Lunch Now"
+  end
 end
